@@ -6,7 +6,7 @@ type IconTitleLogo ={
 }
 const TitleStyle = styled.div`
   font-weight: 700;
-  font-size: 32px;
+  font-size: 48px;
   line-height: 48px;
   color: #00AAFF;
 `

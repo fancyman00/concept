@@ -3,10 +3,8 @@ import Header from '../../../widgets/header';
 import { Main } from './style.ts';
 
 export const BaseLayout = () => (
-    <>
-        <Main>
-            <Header />
-            <Outlet />
-        </Main>
-    </>
+    <Main>
+        <Header />
+        <Outlet />
+    </Main>
 );

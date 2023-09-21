@@ -5,8 +5,8 @@ export const ItemStyle = styled(NavLink)`
   display: flex;
   align-items: center;
 
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 20px;  
   line-height: 28px;
   color: rgba(0, 0, 0, 0.56);
   text-decoration: none;

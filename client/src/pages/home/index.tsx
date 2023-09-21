@@ -20,7 +20,7 @@ export const Home = () => {
                         color={'white'}
                     />
                     <Actions>
-                        <Button onClick={()=>navigate('/write-us')} type={1} icon={messageIcon} size={'l'} text={'Оставить заявку'}/>
+                        <Button onClick={()=>navigate('/contact-us')} type={1} icon={messageIcon} size={'l'} text={'Оставить заявку'}/>
                     </Actions>
                 </Banner>
             </Layout>
