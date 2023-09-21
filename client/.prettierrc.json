@@ -1,0 +1,10 @@
+{
+  "parser": "typescript",
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "proseWrap": "never",
+  "arrowParens": "always",
+  "printWidth": 120,
+  "tabWidth": 4,
+  "files": ["*.html", "legacy/**/*.ts", "legacy/**/*.tsx"]
+}

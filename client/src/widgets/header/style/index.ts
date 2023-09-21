@@ -1,0 +1,22 @@
+import styled from 'styled-components';
+
+export const HeaderStyle = styled.div`
+  &:before {
+    background: rgba(255, 255, 255, 0.51);
+    bottom: -1px;
+    content: '';
+    height: 1px;
+    opacity: 0.5;
+    position: absolute;
+    transition: opacity 0.25s ease;
+    width: 100%;
+  }
+
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(4px);
+  background: var(--header-background);
+  opacity: 1;
+  z-index: 200;
+  background: #ffffff;
+`;
