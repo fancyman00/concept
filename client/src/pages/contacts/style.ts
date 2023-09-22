@@ -5,7 +5,7 @@ export const WriteUsBanner = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
-  padding: 40px 0;
+  padding: 60px 0;
   background: #00AAFF;
 `
 export const ContactsBanner = styled.div`
@@ -13,5 +13,8 @@ export const ContactsBanner = styled.div`
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 120px;
+  padding: 60px 0;
+  background: white;
+`
+export const Style = styled.div`
 `

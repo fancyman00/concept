@@ -12,6 +12,7 @@ export const HeaderStyle = styled.div`
     width: 100%;
   }
 
+  border-bottom: solid 1px rgba(195, 195, 195, 0.55);
   position: sticky;
   top: 0;
   backdrop-filter: blur(4px);

@@ -20,22 +20,22 @@ export const Row = styled.div`
 `
 export const Input = styled.input`
   all: unset;
-  border: none;
   background: white;
   border-radius: 2px;
   font-size: 16px;
   padding: 12px;
   width: 100%;
+  border: solid 1px #0376EA24;
 `
 export const TextArea = styled.textarea`
   all: unset;
-  border: none;
   resize: vertical;
   background: white;
   border-radius: 2px;
   font-size: 16px;
   padding: 12px;
   width: 100%;
+  border: solid 1px #0376EA24;
 `
 export const Submit = styled.button`
   all: unset;
