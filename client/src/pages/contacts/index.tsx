@@ -1,10 +1,10 @@
-import { ContactsBanner, WriteUsBanner, Style } from './style.ts';
 import WriteUs from '../../features/write-us';
 import {ContactsInfo, ContactsInfoItem} from '../../features/contacts-info/ui';
 import MailIcon from '../../shared/assets/icons/mail.svg';
 import TelephoneIcon from '../../shared/assets/icons/telephone.svg';
 import LocationIcon from '../../shared/assets/icons/location.svg';
 import Typography from "../../shared/ui/typography";
+import {Banner} from "../../shared/ui/banner";
 const MockItems: ContactsInfoItem[] = [
     {
         icon: MailIcon,
@@ -21,13 +21,13 @@ const MockItems: ContactsInfoItem[] = [
 ];
 export const Contacts = () => {
     return (
-        <Style>
-            <ContactsBanner>
+        <>
+            <Banner color={ "white"}>
                 <ContactsInfo items={MockItems} />
-            </ContactsBanner>
-            <WriteUsBanner>
+            </Banner>
+            <Banner color={ "#00AAFF"}>
                 <WriteUs />
-            </WriteUsBanner>
-        </Style>
+            </Banner>
+        </>
     );
 };

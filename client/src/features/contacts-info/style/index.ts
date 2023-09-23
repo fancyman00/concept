@@ -4,14 +4,14 @@ export const Item = styled.div`
   flex-direction: column;
   align-items: center;
   img{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
-  max-width: 200px;
+  width: 300px;
   gap: 20px;
   text-align: center;
 `
-export const Style = styled.nav`
+export const Style = styled.div`
   display: flex;
   gap: 64px;
 `

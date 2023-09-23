@@ -2,6 +2,7 @@ import {createBrowserRouter} from "react-router-dom";
 import {BaseLayout} from "../layouts/base";
 import {Home} from "../../pages/home";
 import {Contacts} from "../../pages/contacts";
+import {Products} from "../../pages/products";
 
 export const AppRouter = createBrowserRouter([
     {
@@ -14,7 +15,7 @@ export const AppRouter = createBrowserRouter([
             },
             {
                 path: '/products',
-                element: <div>Products</div>,
+                element: <Products/>,
             },
             {
                 path: '/solutions',
