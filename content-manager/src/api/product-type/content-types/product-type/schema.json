@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_types",
+  "info": {
+    "singularName": "product-type",
+    "pluralName": "product-types",
+    "displayName": "ProductType",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "product_types"
+    }
+  }
+}

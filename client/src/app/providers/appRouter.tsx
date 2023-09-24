@@ -18,6 +18,10 @@ export const AppRouter = createBrowserRouter([
                 element: <Products/>,
             },
             {
+                path: '/products/:id',
+                element: <div>123</div>,
+            },
+            {
                 path: '/solutions',
                 element: <div>solutions</div>,
             },

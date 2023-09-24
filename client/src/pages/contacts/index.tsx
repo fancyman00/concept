@@ -5,6 +5,7 @@ import TelephoneIcon from '../../shared/assets/icons/telephone.svg';
 import LocationIcon from '../../shared/assets/icons/location.svg';
 import Typography from "../../shared/ui/typography";
 import {Banner} from "../../shared/ui/banner";
+import {Style} from "./style.ts";
 const MockItems: ContactsInfoItem[] = [
     {
         icon: MailIcon,
@@ -21,13 +22,13 @@ const MockItems: ContactsInfoItem[] = [
 ];
 export const Contacts = () => {
     return (
-        <>
+        <Style>
             <Banner color={ "white"}>
                 <ContactsInfo items={MockItems} />
             </Banner>
             <Banner color={ "#00AAFF"}>
                 <WriteUs />
             </Banner>
-        </>
+        </Style>
     );
 };

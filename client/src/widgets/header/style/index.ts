@@ -20,4 +20,5 @@ export const HeaderStyle = styled.div`
   opacity: 1;
   z-index: 200;
   background: #ffffff;
+  padding-bottom: 2px;
 `;

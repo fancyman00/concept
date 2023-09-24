@@ -1,19 +1,20 @@
 import {Card, Title, Image, ModelName, Description, Link} from "./style.ts";
-import Icon from '../../../../shared/assets/products/PL-4000G_Front_View.jpg'
-export const ProductCard = () => {
+import {ProductType} from "../../model/types.ts";
+export const ProductCard = (props: {item: ProductType}) => {
+    const {name, icon, modelName, description} = props.item
     return(
         <Card>
             <Title>
-                Транспондер 4.8T
+                {name}
             </Title>
-            <Image src={Icon}/>
+            <Image src={icon}/>
             <ModelName>
-                PL-4000G
+                {modelName}
             </ModelName>
             <Description>
-                Транспондер для передачи 100GbE и 400GbE с ёмкостью 12 x 400G для соединений ЦОДов.
+                {description}
             </Description>
-            <Link to={'/PL-4000G'}>
+            <Link to={'/products/'+modelName}>
                 Подробнее
             </Link>
         </Card>

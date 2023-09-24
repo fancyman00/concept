@@ -36,6 +36,9 @@ export const TextArea = styled.textarea`
   padding: 12px;
   width: 100%;
   border: solid 1px #0376EA24;
+  min-height: 250px;
+  overflow-x: hidden;
+  word-wrap: break-word;
 `
 export const Submit = styled.button`
   all: unset;
