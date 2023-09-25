@@ -715,6 +715,45 @@ export interface ApiProductProduct extends Schema.CollectionType {
   };
 }
 
+export interface ApiProductArticleProductArticle extends Schema.CollectionType {
+  collectionName: 'product_articles';
+  info: {
+    singularName: 'product-article';
+    pluralName: 'product-articles';
+    displayName: 'ProductArticle';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    product: Attribute.Relation<
+      'api::product-article.product-article',
+      'oneToOne',
+      'api::product.product'
+    >;
+    Components: Attribute.DynamicZone<
+      ['ad-and-disad.advantages-and-disadvantages', 'description.description']
+    >;
+    SmallDescription: Attribute.RichText;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::product-article.product-article',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::product-article.product-article',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiProductTypeProductType extends Schema.CollectionType {
   collectionName: 'product_types';
   info: {
@@ -727,8 +766,8 @@ export interface ApiProductTypeProductType extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    name: Attribute.String & Attribute.Required & Attribute.Unique;
-    description: Attribute.RichText & Attribute.Required;
+    Name: Attribute.String & Attribute.Required & Attribute.Unique;
+    Description: Attribute.RichText & Attribute.Required;
     product: Attribute.Relation<
       'api::product-type.product-type',
       'manyToOne',
@@ -769,6 +808,7 @@ declare module '@strapi/strapi' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
       'api::product.product': ApiProductProduct;
+      'api::product-article.product-article': ApiProductArticleProductArticle;
       'api::product-type.product-type': ApiProductTypeProductType;
     }
   }

@@ -3,6 +3,7 @@ import {BaseLayout} from "../layouts/base";
 import {Home} from "../../pages/home";
 import {Contacts} from "../../pages/contacts";
 import {Products} from "../../pages/products";
+import {Article} from "../../pages/article";
 
 export const AppRouter = createBrowserRouter([
     {
@@ -19,7 +20,7 @@ export const AppRouter = createBrowserRouter([
             },
             {
                 path: '/products/:id',
-                element: <div>123</div>,
+                element: <Article/>,
             },
             {
                 path: '/solutions',

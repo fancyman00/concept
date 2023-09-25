@@ -12,12 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "Name": {
       "type": "string",
       "unique": true,
       "required": true
     },
-    "description": {
+    "Description": {
       "type": "richtext",
       "required": true
     },

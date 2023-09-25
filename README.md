@@ -4,6 +4,7 @@
     <li>Future Sliced Design</li>
     <li>Styled-components</li>
     <li>React-Router-Dom</li>
+    <li>Strapi CMS</li>
 </ul>
 <h2>Screenshots</h2>
 <h4>Main</h4>
@@ -12,3 +13,8 @@
 <img src="screens/img_1.png"/>
 <h4>Contacts</h4>
 <img src="screens/img_2.png"/>
+<h4>Product Article</h4>
+<img src="screens/img_3.png"/>
+<h2>Content Manager</h2>
+<h4>Types</h4>
+<img src="screens/img_4.png"/>

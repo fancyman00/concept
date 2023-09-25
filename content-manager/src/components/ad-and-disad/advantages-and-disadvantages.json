@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_ad_and_disad_advantages_and_disadvantages",
+  "info": {
+    "displayName": "Advantages And Disadvantages",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "description": {
+      "displayName": "Description",
+      "type": "component",
+      "repeatable": true,
+      "component": "description.description"
+    }
+  }
+}
