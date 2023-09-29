@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+export const Style = styled.div`
+`;
 export const Title = styled.div`
     padding-top: 40px;
 `;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 export const Style = styled.div`
-  background: white;
+  background: #00AAFF;
   height: 100vh
 `

@@ -38,6 +38,10 @@ export const AppRouter = createBrowserRouter([
                 path: '/contact-us',
                 element: <Contacts/>,
             },
+            {
+                path: '/my-cart',
+                element: <div></div>,
+            },
         ],
     },
 ],

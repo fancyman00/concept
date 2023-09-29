@@ -2,14 +2,15 @@ import styled from 'styled-components';
 import {NavLink} from "react-router-dom";
 
 export const Card = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-    background: white;
-    padding: 20px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  padding: 20px;
+  align-items: center;
+  box-shadow: rgba(40, 39, 39, 0.12) 5px 5px 5px 5px;
 `;
 export const Title = styled.div`
     font-size: 24px;

@@ -41,3 +41,17 @@ export const LogoStyle = styled(NavLink)`
   color: black;
   text-decoration: none;
 `
+export const IconItemStyle = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.56);
+  img{
+    width: 28px;
+    height: auto;
+  }
+`
