@@ -27,10 +27,28 @@ export const Description = styled.div`
     margin-top: 12px;
     text-align: center;
 `;
-export const Link = styled(NavLink)`
+export const Add = styled.div`
   margin-top: 20px;
-  color: #00AAFF;
-  text-decoration: none;
+  color: white;
   font-size: 16px;
   font-weight: 500;
+  background: #00AAFF;
+  width: 64%;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.5s all;
+  &:hover{
+    opacity: 0.8;
+  }
+  cursor: pointer;
+`
+export const Main = styled(NavLink)`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 `
