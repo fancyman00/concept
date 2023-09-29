@@ -8,8 +8,8 @@ type NavLinkItem = {
     icon?: string
 };
 type NavBarProps = {
-    textItems: NavLinkItem[];
-    iconItems: NavLinkItem[];
+    textItems?: NavLinkItem[];
+    iconItems?: NavLinkItem[];
 };
 
 export const NavBar = (props: NavBarProps) => {
@@ -19,10 +19,10 @@ export const NavBar = (props: NavBarProps) => {
             <LogoStyle to={'/'}>
                 <IconTitleLogo title={'CONCEPT'} icon={''} />
             </LogoStyle>
-            {textItems.map((item) => (
+            {textItems && textItems.map((item) => (
                 <ItemStyle key={item.id} to={item.to}>{item.label}</ItemStyle>
             ))}
-            {iconItems.map((item) => (
+            {iconItems && iconItems.map((item) => (
               <IconItemStyle href={item.to} key={item.id}><img src={item.icon} alt={''}/>{item.label}</IconItemStyle>
             ))}
         </Style>

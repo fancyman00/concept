@@ -22,3 +22,8 @@ export const HeaderStyle = styled.div`
   background: #ffffff;
   padding-bottom: 2px;
 `;
+export const Style = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`

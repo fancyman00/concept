@@ -1,13 +1,18 @@
-import { HeaderStyle } from '../style';
+import { HeaderStyle, Style } from "../style";
 import NavBar from '../../../features/nav-bar';
 import Layout from '../../../shared/ui/layout';
 import shortid from 'shortid';
-import BasketIcon from '../../../shared/assets/icons/shopping-cart-blue.svg'
+import Icon from '../../../shared/assets/icons/shopping-cart-blue.svg'
+import { BasketIcon } from "../../../entities/basket/ui/basket-icon";
+
 export const Header = () => {
     return (
         <HeaderStyle>
             <Layout type={'page'}>
-                <NavBar textItems={MockTextItems} iconItems={MockIconItems}/>
+                <Style>
+                    <NavBar textItems={MockTextItems}/>
+                    <BasketIcon to={'/my-cart'} icon={Icon} title={'Корзина'}/>
+                </Style>
             </Layout>
         </HeaderStyle>
     );
@@ -20,6 +25,8 @@ const MockTextItems = [
     { to: '/about', id: shortid.generate(), label: 'О компании' },
     { to: '/contact-us', id: shortid.generate(), label: 'Контакты' },
 ];
-const MockIconItems = [
-    { to: '/my-cart', id: shortid.generate(), label: 'Корзина', icon: BasketIcon },
-];
+// const MockIconItems = [
+//     { to: '/my-cart', id: shortid.generate(), label: 'Корзина', icon: BasketIcon },
+// ];
+// return state.products.reduce((accumulator, currentValue) => currentValue.productCount + accumulator, 0)
+
