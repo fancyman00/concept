@@ -12,6 +12,7 @@ export const BasketIcon = (props: BasketIconProps) => {
     const [count, setCount] = useState(0)
     const products = useSelector((state: RootState) => state.basket.products);
     useEffect(()=>{
+      console.log(products)
       setCount(products.reduce((accumulator, currentValue) => currentValue.productCount + accumulator, 0))
     }, [products])
     return (
