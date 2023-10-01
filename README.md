@@ -4,6 +4,8 @@
     <li>Future Sliced Design</li>
     <li>Styled-components</li>
     <li>React-Router-Dom</li>
+    <li>Redux toolkit</li>
+    <li>react-hook-form</li>
     <li>Strapi CMS</li>
 </ul>
 <h2>Screenshots</h2>
