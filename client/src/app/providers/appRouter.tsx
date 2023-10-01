@@ -4,6 +4,7 @@ import {Home} from "../../pages/home";
 import {Contacts} from "../../pages/contacts";
 import {Products} from "../../pages/products";
 import {Article} from "../../pages/article";
+import { MyCart } from "../../pages/my-cart";
 
 export const AppRouter = createBrowserRouter([
     {
@@ -40,7 +41,7 @@ export const AppRouter = createBrowserRouter([
             },
             {
                 path: '/my-cart',
-                element: <div></div>,
+                element: <MyCart/>,
             },
         ],
     },

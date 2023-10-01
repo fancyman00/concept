@@ -1,5 +1,6 @@
 import { useForm } from 'react-hook-form';
-import { Title, WriteUsForm, Row, Input, TextArea, Submit } from '../style';
+import { Title, WriteUsForm, Row, TextArea, Submit } from '../style';
+import { Input } from "../../../shared/ui/input";
 type WriteUsProps = {
     onSubmit: (d: any) => void;
 };

@@ -15,6 +15,8 @@
 <img src="screens/img_2.png"/>
 <h4>Product Article</h4>
 <img src="screens/img_3.png"/>
+<h4>My Cart</h4>
+<img src="screens/img_5.png"/>
 <h2>Content Manager</h2>
 <h4>Types</h4>
 <img src="screens/img_4.png"/>
