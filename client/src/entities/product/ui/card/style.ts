@@ -10,7 +10,13 @@ export const Card = styled.div`
   background: white;
   padding: 20px;
   align-items: center;
-  box-shadow: rgba(40, 39, 39, 0.12) 5px 5px 5px 5px;
+  box-shadow: rgba(40, 39, 39, 0.12) 2px 5px 5px 2px;
+  transition: 0.5s all;
+
+  &:hover {
+    opacity: 0.8;
+    
+  }
 `;
 export const Title = styled.div`
     font-size: 24px;
@@ -42,6 +48,7 @@ export const Add = styled.div`
     opacity: 0.8;
   }
   cursor: pointer;
+  user-select: none;
 `
 export const Main = styled(NavLink)`
   display: flex;

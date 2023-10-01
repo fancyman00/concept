@@ -18,15 +18,6 @@ export const Row = styled.div`
   display: flex;  
   gap: 12px;
 `
-export const Input = styled.input`
-  all: unset;
-  background: white;
-  border-radius: 2px;
-  font-size: 16px;
-  padding: 12px;
-  width: 100%;
-  border: solid 1px #0376EA24;
-`
 export const TextArea = styled.textarea`
   all: unset;
   resize: vertical;

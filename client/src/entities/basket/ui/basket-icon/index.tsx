@@ -12,15 +12,14 @@ export const BasketIcon = (props: BasketIconProps) => {
     const [count, setCount] = useState(0)
     const products = useSelector((state: RootState) => state.basket.products);
     useEffect(()=>{
-      console.log(products)
       setCount(products.reduce((accumulator, currentValue) => currentValue.productCount + accumulator, 0))
     }, [products])
     return (
-        <IconItem href={to}>
+        <IconItem to={to}>
             <img src={icon} alt={''} />
             <Title>
               {title}
-              <Counter>{count}</Counter>
+              {count > 0 && <Counter>{count}</Counter>}
             </Title>
         </IconItem>
     );

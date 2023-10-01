@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
-export const IconItem = styled.a`
+export const IconItem = styled(NavLink)`
   display: flex;
   align-items: center;
   justify-content: center;
