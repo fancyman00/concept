@@ -14,6 +14,11 @@ export const Order = () => {
     const products = useSelector((state: RootState) => state.basket.products);
     const { addProduct, removeProduct, clearProduct } = useActions(basketSlice.actions);
 
+    const submitHandle = (d: any) => {
+        const data = {...d, products}
+        sendOrder(data)
+    }
+
     return (
         <Style>
             <Title>
@@ -33,7 +38,7 @@ export const Order = () => {
                             />
                         )}
                     />
-                <OrderForm onSubmit={sendOrder}/>
+                <OrderForm onSubmit={submitHandle}/>
                   <Typography size={'s'} text={'О товаре и продавце\n' +
                     'Нажимая «Оплатить картой», вы соглашаетесь с условиями использования сервиса Яндекс Маркет. С подробными условиями доставки можно ознакомиться на странице о доставке.\n' +
                     'Товары с доставкой партнёра Яндекс Еды купят по вашему поручению в обычном магазине (раздел 5 условий).'}/>

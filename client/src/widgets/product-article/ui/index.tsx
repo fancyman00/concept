@@ -1,6 +1,5 @@
 import { Content, Model, Image, Title, Actions, Style } from "../style";
 import Icon from '../../../shared/assets/products/PL-4000G_Front_View.jpg';
-import ShoppingCartIcon from '../../../shared/assets/icons/shopping-cart.svg';
 import { useNavigate } from 'react-router-dom';
 import Typography from '../../../shared/ui/typography';
 import Button from '../../../shared/ui/button';

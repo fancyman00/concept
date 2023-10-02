@@ -28,6 +28,7 @@ export const Counter = styled.div`
   justify-content: center;
   width: 16px;
   height: 16px;
+  line-height: 24px;
   background: #00AAFF;
   border: 4px solid #00AAFF;
   color: white;

@@ -44,9 +44,11 @@ export const Add = styled.div`
   padding: 12px;
   border-radius: 8px;
   transition: 0.5s all;
-  &:hover{
-    opacity: 0.8;
+
+  &:hover {
+    background: #008cff;
   }
+
   cursor: pointer;
   user-select: none;
 `

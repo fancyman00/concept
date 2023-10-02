@@ -1,4 +1,4 @@
-import { Actions, Info, Style } from "./style.ts";
+import {Actions, Count, Info, Style} from "./style.ts";
 import Typography from "../../../../shared/ui/typography";
 import { ActionIcon } from "../../../../shared/ui/icon";
 import Plus from '../../../../shared/assets/icons/plus.svg'
@@ -23,7 +23,7 @@ export const BasketItem = (props: basketItemProps) => {
           </Info>
           <Actions>
               <ActionIcon size={16} icon={Plus} background={'#00aaff'} rounded={true} onClick={add} />
-              {count}
+              <Count>{count}</Count>
               <ActionIcon size={16} icon={Minus} background={'#00aaff'} rounded={true} onClick={remove} />
           </Actions>
       </Style>

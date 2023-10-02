@@ -19,10 +19,14 @@ export const Actions = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 4px;
-  font-size: 16px;
-  font-weight: 500;
   border-radius: 8px;
-  color: white;
   background: rgb(0, 170, 255);
   width: 120px;
+`
+export const Count = styled.div`
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: white;
+  vertical-align: center;
 `

@@ -13,6 +13,7 @@ export const Style = styled.form`
 `;
 export const Submit = styled.button`
   all: unset;
+  cursor: pointer;
   border: none;
   resize: vertical;
   background: #00aaff;

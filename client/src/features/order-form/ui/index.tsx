@@ -8,12 +8,11 @@ type OrderFormProps = {
 export const OrderForm = (props: OrderFormProps) => {
   const {onSubmit} = props
   const { register, handleSubmit } = useForm();
-
   return(
     <Style onSubmit={handleSubmit(onSubmit)}>
       <Typography size={'l'} weight={600} text={'Оформление'}/>
-      <Input placeholder={'Имя'} {...register('mail')} />
-      <Input placeholder={'Фамилия'} {...register('mail')} />
+      <Input placeholder={'Имя'} {...register('name')} />
+      <Input placeholder={'Фамилия'} {...register('surname')} />
       <Input placeholder={'Электронная почта'} {...register('mail')} />
       <Input placeholder={'Телефон'} {...register('phone')} />
       <Submit type="submit">Оформить</Submit>
