@@ -33,6 +33,7 @@ export const TextArea = styled.textarea`
 `
 export const Submit = styled.button`
   all: unset;
+  cursor: pointer;
   border: none;
   resize: vertical;
   background: #ffffff;

@@ -6,7 +6,7 @@ import LocationIcon from '../../shared/assets/icons/location.svg';
 import Typography from '../../shared/ui/typography';
 import { Banner } from '../../shared/ui/banner';
 import { Style } from './style.ts';
-import axios from 'axios';
+import {sendMessage} from "./api.ts";
 const MockItems: ContactsInfoItem[] = [
     {
         icon: MailIcon,
@@ -25,17 +25,15 @@ const MockItems: ContactsInfoItem[] = [
     },
 ];
 export const Contacts = () => {
-    const submitHandle = async (d: any) => {
-        axios.put('http://127.0.0.1:8000/send', d, { headers: { 'Content-Type': 'application/json' } });
-    };
     return (
         <Style>
             <Banner color={'white'}>
                 <ContactsInfo items={MockItems} />
             </Banner>
             <Banner color={'#00AAFF'}>
-                <WriteUs onSubmit={submitHandle} />
+                <WriteUs onSubmit={sendMessage} />
             </Banner>
         </Style>
     );
 };
+// TODO: Need refactor FSD error

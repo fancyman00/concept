@@ -8,12 +8,12 @@ class EmailApi:
         self.app = app
         self.service = controller
 
-        @self.app.put("/send")
+        @self.app.put("/api/send")
         @error_wrapper
         def send_message_mail(data: Message):
             controller.send_message_email(data)
 
-        @self.app.put("/order")
+        @self.app.put("/api/order")
         @error_wrapper
         def send_order_mail(data: Order):
             controller.send_order_email(data)
