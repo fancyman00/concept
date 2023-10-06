@@ -1,17 +1,20 @@
 import appApi from '../../../shared/api';
 
-const productApi = appApi.injectEndpoints({
+export const productApi = appApi.injectEndpoints({
     endpoints: (build) => ({
         getProduct: build.query({
             query: (id) => ({ url: `product/${id}` }),
         }),
         getAllProducts: build.query({
-            query: () => ({ url: `product/` }),
+            query: () => ({ url: `products` }),
         }),
         getArticle: build.query({
-            query: (id) => ({ url: `article/${id}` }),
+            query: (id) => ({ url: `product-articles/${id}` }),
+        }),
+        getProductTypes: build.query({
+            query: () => ({ url: `product-types` }),
         }),
     }),
 });
 
-export const { useGetProductQuery, useGetAllProductsQuery, useGetArticleQuery } = productApi;
+export const { useGetProductQuery,useGetProductTypesQuery, useGetAllProductsQuery, useGetArticleQuery } = productApi;

@@ -1,5 +1,6 @@
 import Layout from '../../../shared/ui/layout';
 import { Item, Style } from '../style';
+import { useGetProductTypesQuery } from "../../../entities/product/api";
 
 type FilterProps = {
     filter: string,
@@ -11,6 +12,8 @@ export type FilterItem = {
 }
 export const ProductFilter = (props: FilterProps) => {
     const { filter, setFilter, items } = props;
+    const item2s = useGetProductTypesQuery({})
+    console.log(item2s)
     return (
         <Layout type={'page'}>
             <Style>
