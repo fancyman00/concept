@@ -1,10 +1,11 @@
 import { Content, Model, Image, Title, Actions, Style } from "../style";
 import Icon from '../../../shared/assets/products/PL-4000G_Front_View.jpg';
-import { useNavigate } from 'react-router-dom';
 import Typography from '../../../shared/ui/typography';
 import Button from '../../../shared/ui/button';
 import { Description } from '../../../shared/ui/description';
 import { AdvantagesAndDisAdvantages } from '../../../shared/ui/a-and-d';
+import {useActions} from "../../../shared/model";
+import {basketSlice} from "../../../entities/basket/model/slice.ts";
 
 const MockData = {
     title: 'Транспондер 4.8T',
@@ -31,7 +32,10 @@ const MockData = {
     ],
 };
 export const ProductArticle = () => {
-    const navigate = useNavigate();
+    const {addProduct} = useActions(basketSlice.actions)
+    const addHandle = () => {
+        addProduct(MockData.model)
+    }
     return (
         <Style>
             <Title>
@@ -54,7 +58,7 @@ export const ProductArticle = () => {
                 ))}
                 <Actions>
                     <Button
-                        onClick={() => navigate('/contact-us')}
+                        onClick={addHandle}
                         type={2}
                         size={'m'}
                         text={'Добавить в корзину'}
