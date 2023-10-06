@@ -8,6 +8,8 @@
     <li>RTK Query</li>
     <li>react-hook-form</li>
     <li>Strapi CMS</li>
+    <li>Fastapi</li>
+    <li>SMTP Email-Service Python</li>
 </ul>
 <h2>Screenshots</h2>
 <h4>Main</h4>
