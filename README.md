@@ -5,6 +5,7 @@
     <li>Styled-components</li>
     <li>React-Router-Dom</li>
     <li>Redux toolkit</li>
+    <li>RTK Query</li>
     <li>react-hook-form</li>
     <li>Strapi CMS</li>
 </ul>
