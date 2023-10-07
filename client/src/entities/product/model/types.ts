@@ -1,6 +1,6 @@
 export type ProductType = {
-    name: string,
-    icon: string,
-    modelName: string,
-    description: string
+    Title: string,
+    ImageUrl: string,
+    ModelName: string,
+    Description: string
 }

@@ -24,18 +24,18 @@
     "Image": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
     },
     "Description": {
       "type": "richtext"
     },
     "ModelName": {
+      "type": "string"
+    },
+    "ImageUrl": {
       "type": "string"
     }
   }

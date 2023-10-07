@@ -18,18 +18,18 @@ export const Card = styled.div`
     
   }
 `;
-export const Title = styled.div`
+export const TitleB = styled.div`
     font-size: 24px;
     font-weight: 500;
     margin-top: 20px;
 `;
-export const ModelName = styled.div``;
+export const ModelNameB = styled.div``;
 export const Image = styled.img`
     margin-top: 20px;
     width: 80%;
     height: auto;
 `;
-export const Description = styled.div`
+export const DescriptionB = styled.div`
     margin-top: 12px;
     text-align: center;
 `;

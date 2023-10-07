@@ -694,9 +694,10 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'oneToMany',
       'api::product-type.product-type'
     >;
-    Image: Attribute.Media;
+    Image: Attribute.Media & Attribute.Required;
     Description: Attribute.RichText;
     ModelName: Attribute.String;
+    ImageUrl: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
