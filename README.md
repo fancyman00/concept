@@ -11,6 +11,14 @@
     <li>Fastapi</li>
     <li>SMTP Email-Service Python</li>
 </ul>
+<h2>Road Map</h2>
+<ul>
+    <li><h4>"Услуги" page</h4></li>
+    <li><h4>"Решения" page</h4></li>
+    <li><h4>"О компании" page</h4></li>
+    <li><h4>Mobile adaptation</h4></li>
+    <li><h4>Create own cms</h4></li>
+</ul>
 <h2>Screenshots</h2>
 <h4>Main</h4>
 <img src="screens/img.png"/>
