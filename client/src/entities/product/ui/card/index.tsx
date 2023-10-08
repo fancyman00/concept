@@ -2,9 +2,8 @@ import { Card, TitleB, Image, ModelNameB, DescriptionB, Main, Add } from "./styl
 import {ProductType} from "../../model/types.ts";
 import { useActions } from "../../../../shared/model";
 import { basketSlice } from "../../../basket/model/slice.ts";
-export const ProductCard = (props: {item: ProductType, id: number}) => {
-    const {Title, ImageUrl, ModelName, Description} = props.item
-    const id = props.id
+export const ProductCard = (props: {item: ProductType}) => {
+    const {Title, ImageUrl, ModelName, Description, id} = props.item
     const {addProduct} = useActions(basketSlice.actions)
     const addHandle = () => {
       addProduct(ModelName)

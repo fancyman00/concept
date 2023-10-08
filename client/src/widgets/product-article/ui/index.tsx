@@ -5,37 +5,13 @@ import { Description } from '../../../shared/ui/description';
 import { AdvantagesAndDisAdvantages } from '../../../shared/ui/a-and-d';
 import {useActions} from "../../../shared/model";
 import {basketSlice} from "../../../entities/basket/model/slice.ts";
-import { useGetArticleQuery } from "../../../entities/product/api";
-import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import { ProductType } from "../../../entities/product/model/types.ts";
-type StrapiComponent = {
-    id: number,
-    __component: string,
-}
-type AdvComponent = {
-    Title: string,
-    description: DescriptionComponent[]
-}
-type DescriptionComponent = {
-    Title: string,
-    Text: string
-}
-type ArticleApiType = {
-    SmallDescription: string,
-    product: {data: {attributes: ProductType}},
-    Components: [StrapiComponent & AdvComponent & DescriptionComponent ]
+import {useProductArticleData} from "../model/hooks/useProductArticleData.tsx";
 
-};
 export const ProductArticle = () => {
-    const id = useLoaderData()
+    const id = useLoaderData() as number
+    const {articleItem} = useProductArticleData(id)
     const {addProduct} = useActions(basketSlice.actions)
-    const [articleItem, setArticleItem] = useState<ArticleApiType>()
-    const resultApi = useGetArticleQuery(id)
-    useEffect(()=>{
-        console.log(resultApi.data)
-        resultApi.isSuccess && setArticleItem(resultApi.data.data[0].attributes)
-    }, [resultApi])
     const addHandle = () => {
         articleItem && addProduct(articleItem.product.data.attributes.ModelName)
     }

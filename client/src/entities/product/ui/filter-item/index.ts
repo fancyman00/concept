@@ -1,5 +1,7 @@
 import styled from "styled-components";
-
+export type ProductFilterType = {
+    Name: string,
+}
 export const ProductFilterItem = styled.div<{$filter: boolean}>`
     cursor: pointer;
     font-weight: 500;
