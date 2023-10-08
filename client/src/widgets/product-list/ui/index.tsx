@@ -10,8 +10,8 @@ import {useProductListData} from "../model/hooks/useProductListData.tsx";
 
 
 export const ProductList = () => {
-    const [filter, setFilter] = useState<string | undefined>();
-    const {filterItems, productItems} = useProductListData(filter)
+    const [filter, setFilter] = useState({Name: undefined, Description: 'Все'});
+    const {filterItems, productItems} = useProductListData(filter.Name)
     return (
         <>
             <Banner color={'#00AAFF'}>
@@ -22,8 +22,8 @@ export const ProductList = () => {
                     items={[...filterItems, {Name: undefined, Description: 'Все'}]}
                     renderItem={(item) => (
                         <ProductFilterItem
-                            $filter={filter == item.Name}
-                            onClick={() => setFilter(item.Name)}
+                            $filter={filter.Description == item.Description}
+                            onClick={() => setFilter(item)}
                         >
                             {item.Description}
                         </ProductFilterItem>
