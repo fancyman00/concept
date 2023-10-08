@@ -19,13 +19,13 @@ export const ProductList = () => {
             </Banner>
             <Banner color={'white'} padding={24}>
                 <Filter
-                    items={filterItems}
+                    items={[...filterItems, {Name: undefined, Description: 'Все'}]}
                     renderItem={(item) => (
                         <ProductFilterItem
                             $filter={filter == item.Name}
                             onClick={() => setFilter(item.Name)}
                         >
-                            {item.Name}
+                            {item.Description}
                         </ProductFilterItem>
                     )}
                 />
