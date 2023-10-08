@@ -5,26 +5,22 @@ import { CardList } from '../../../features/card-list/ui';
 import { ProductCard } from '../../../entities/product/ui/card';
 import { useEffect, useState } from 'react';
 import Layout from '../../../shared/ui/layout';
-import { useGetProductTypesQuery } from '../../../entities/product/api/index.ts';
-import { ProductFilterItem } from '../../../entities/product/ui/filter-item/index.ts';
-import { useGetAllProductsQuery } from "../../../entities/product/api";
+import { useGetProductTypesQuery } from '../../../entities/product/api';
+import { ProductFilterItem } from '../../../entities/product/ui/filter-item';
+import { useGetAllProductsQuery } from '../../../entities/product/api';
 
 export const ProductList = () => {
-    const [filter, setFilter] = useState<string>('');
+    const [filter, setFilter] = useState<string | undefined>();
     const [filterItems, setFilterItems] = useState([]);
     const [productItems, setProductItems] = useState([]);
     const filterApi = useGetProductTypesQuery({});
-    const productApi = useGetAllProductsQuery({});
+    const productApi = useGetAllProductsQuery(filter);
     useEffect(() => {
-        if (filterApi.isSuccess) {
-            setFilterItems(filterApi.data.data);
-        }
+        filterApi.isSuccess && setFilterItems(filterApi.data.data);
     }, [filterApi]);
     useEffect(() => {
-        if (productApi.isSuccess) {
-            console.log(productApi.data.data)
-            setProductItems(productApi.data.data);
-        }
+        productApi.isSuccess && console.log(productApi.data.data)
+        productApi.isSuccess && setProductItems(productApi.data.data);
     }, [productApi]);
     return (
         <>
@@ -45,7 +41,7 @@ export const ProductList = () => {
                 />
             </Banner>
             <Layout type={'page'}>
-                <CardList items={productItems} renderItem={(item) => <ProductCard item={item.attributes} />} />
+                <CardList items={productItems} renderItem={(item) => <ProductCard id={item.id} item={item.attributes} />} />
             </Layout>
         </>
     );

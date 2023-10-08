@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8248f745-137b-4d55-8e5a-d4e52525bab2" name="Changes" comment="api update">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.idea/server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/providers/appRouter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/providers/appRouter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/entities/basket/ui/basket-item/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/entities/basket/ui/basket-item/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/entities/product/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/entities/product/api/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/entities/product/ui/card/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/entities/product/ui/card/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/shared/ui/a-and-d/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shared/ui/a-and-d/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/shared/ui/a-and-d/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shared/ui/a-and-d/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/shared/ui/description/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shared/ui/description/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/widgets/product-article/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/widgets/product-article/ui/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/widgets/product-list/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/widgets/product-list/ui/index.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/content-manager/package.json" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2WCIPCS3ZTlUhPjmBVn550hPIvi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/nofancy/AquaProjects/concept1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/nofancy/AquaProjects/concept1/client/node_modules/prettier",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "ts.external.directory.path": "/Users/nofancy/AquaProjects/concept1/client/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/static" />
+      <recent name="$PROJECT_DIR$/server" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="develop" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/content-manager/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="develop" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.develop" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8248f745-137b-4d55-8e5a-d4e52525bab2" name="Changes" comment="" />
+      <created>1696230109725</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696230109725</updated>
+      <workItem from="1696230118163" duration="6057000" />
+      <workItem from="1696309975499" duration="752000" />
+      <workItem from="1696311414283" duration="3471000" />
+      <workItem from="1696569634805" duration="7389000" />
+      <workItem from="1696668234028" duration="6122000" />
+    </task>
+    <task id="LOCAL-00001" summary="add server">
+      <option name="closed" value="true" />
+      <created>1696236291706</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696236291708</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add server">
+      <option name="closed" value="true" />
+      <created>1696236320990</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696236320990</updated>
+    </task>
+    <task id="LOCAL-00003" summary="small refactor">
+      <option name="closed" value="true" />
+      <created>1696310019420</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696310019421</updated>
+    </task>
+    <task id="LOCAL-00004" summary="small refactor">
+      <option name="closed" value="true" />
+      <created>1696311472621</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696311472621</updated>
+    </task>
+    <task id="LOCAL-00005" summary="rtk query add for app &amp; product entities">
+      <option name="closed" value="true" />
+      <created>1696572417548</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696572417548</updated>
+    </task>
+    <task id="LOCAL-00006" summary="rtk query add for app &amp; product entities">
+      <option name="closed" value="true" />
+      <created>1696572570061</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696572570061</updated>
+    </task>
+    <task id="LOCAL-00007" summary="readme update">
+      <option name="closed" value="true" />
+      <created>1696573854675</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696573854675</updated>
+    </task>
+    <task id="LOCAL-00008" summary="RTK Query + strapi update">
+      <option name="closed" value="true" />
+      <created>1696630903620</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696630903621</updated>
+    </task>
+    <task id="LOCAL-00009" summary="api update">
+      <option name="closed" value="true" />
+      <created>1696713425473</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1696713425474</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add server" />
+    <MESSAGE value="small refactor" />
+    <MESSAGE value="rtk query add for app &amp; product entities" />
+    <MESSAGE value="readme update" />
+    <MESSAGE value="RTK Query + strapi update" />
+    <MESSAGE value="api update" />
+    <option name="LAST_COMMIT_MESSAGE" value="api update" />
+  </component>
+</project>

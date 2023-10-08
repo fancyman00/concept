@@ -14,8 +14,8 @@ export const AdvantagesAndDisAdvantages = (props: AdAndDisadProps) => {
                 {description.map((item)=>{
                     return(
                         <Description>
-                            <Typography size={'l'} color={'white'} text={item.title} />
-                            <Typography size={'m'} color={'white'} text={item.text} />
+                            <Typography size={'l'} color={'white'} text={item.Title} />
+                            <Typography size={'m'} color={'white'} text={item.Text} />
                         </Description>
                     )
                 })}

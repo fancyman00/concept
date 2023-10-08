@@ -22,6 +22,7 @@ export const AppRouter = createBrowserRouter([
             {
                 path: '/products/:id',
                 element: <Article/>,
+                loader: async ({ params }) => params.id,
             },
             {
                 path: '/solutions',

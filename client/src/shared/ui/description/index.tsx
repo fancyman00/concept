@@ -2,15 +2,15 @@ import Typography from '../typography';
 import { Style } from './style.ts';
 
 export type DescriptionProps = {
-    title: string;
-    text: string;
+    Title: string;
+    Text: string;
 };
 export const Description = (props: DescriptionProps) => {
-    const { title, text } = props;
+    const { Title, Text } = props;
     return (
         <Style>
-            <Typography size={'l'} color={'#00AAFF'} text={title} />
-            <Typography size={'m'} text={text} />
+            <Typography size={'l'} color={'#00AAFF'} text={Title} />
+            <Typography size={'m'} text={Text} />
         </Style>
     );
 };
