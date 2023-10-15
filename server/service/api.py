@@ -1,6 +1,6 @@
-from service.controller import EmailController
-from service.model import Message, Order
-from service.tools.decorators import error_wrapper
+from .controller import EmailController
+from .model import Message, Order
+from .tools.decorators import error_wrapper
 
 
 class EmailApi:

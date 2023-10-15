@@ -6,5 +6,4 @@ export const PageLayout = styled.div`
     box-sizing: border-box;
     display: block;
     margin: 0 auto;
-    //padding-bottom: 20px;
 `;

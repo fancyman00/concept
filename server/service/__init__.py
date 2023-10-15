@@ -1,6 +1,6 @@
-from service.api import EmailApi
-from service.controller import EmailController
-from service.smtp.email import EmailService
+from .api import EmailApi
+from .controller import EmailController
+from .smtp.email import EmailService
 
 
 class Email:

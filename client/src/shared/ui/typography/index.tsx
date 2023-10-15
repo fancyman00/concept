@@ -2,9 +2,10 @@ import { TypographyL } from "./large"
 import { TypographyXL } from "./xlarge";
 import { TypographyM } from "./medium";
 import { TypographyS } from "./small";
+import {TypographyXXL} from "./xxlarge";
 
 type TypographyProps = {
-    size: 'xl' | 'l' | 'm' | 's'
+    size: 'xxl' | 'xl' | 'l' | 'm' | 's'
     text: string
     color?: string
     weight?: string | number
@@ -13,8 +14,13 @@ type TypographyProps = {
 const Typography = (props: TypographyProps) => {
     const {size, text, color, weight} = props
     switch (size) {
+        case "xxl": return(
+            <TypographyXXL $color={color} $weight={weight}>
+                {text}
+            </TypographyXXL>
+        )
         case "xl": return(
-            <TypographyXL $color={color}>
+            <TypographyXL $color={color} $weight={weight}>
                 {text}
             </TypographyXL>
         )

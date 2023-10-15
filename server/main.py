@@ -1,9 +1,9 @@
 import os
 
+import uvicorn
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
-import uvicorn
 from service import Email
 
 origins = [
@@ -22,6 +22,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 buildDir = str(os.path.abspath(os.getcwd()))+"/server/dist"
-app.mount("/", StaticFiles(directory=buildDir, html=True), name="dist")
-# email = Email(app, "***", "***", "***")
+app.mount("/", StaticFiles(directory=buildDir, html=True), name="static")
 uvicorn.run(app, host='0.0.0.0', port=5000, log_level='info', workers=True)
+# email = Email(app, "***", "***", "***")

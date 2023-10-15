@@ -25,8 +25,4 @@ const MockTextItems = [
     { to: '/about', id: shortid.generate(), label: 'О компании' },
     { to: '/contact-us', id: shortid.generate(), label: 'Контакты' },
 ];
-// const MockIconItems = [
-//     { to: '/my-cart', id: shortid.generate(), label: 'Корзина', icon: BasketIcon },
-// ];
-// return state.products.reduce((accumulator, currentValue) => currentValue.productCount + accumulator, 0)
 

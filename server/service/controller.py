@@ -1,6 +1,6 @@
-from service.smtp.email import EmailService
-from service.model import Message, Order
-from service.tools.email_constructor import message_constructor, order_constructor
+from .model import Message, Order
+from .smtp.email import EmailService
+from .tools.email_constructor import order_constructor, message_constructor
 
 
 class EmailController:

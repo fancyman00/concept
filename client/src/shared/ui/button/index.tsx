@@ -11,11 +11,12 @@ type ButtonProps = {
     icon?: string;
     type?: ButtonType;
     onClick?: () => void;
+    expand?: boolean;
 };
-const Style = styled.div<{ $type?: number }>`
+const Style = styled.div<{ $type?: number, $expand?: boolean }>`
     color: ${(props) => (props.$type == 1 ? '#00AAFF' : props.$type == 2 ? 'white' : '#0000008a')};
     background: ${(props) => (props.$type == 1 ? 'white' : props.$type == 2 ? '#00AAFF' : 'white')};
-    width: fit-content;
+    width: ${(props) => props.$expand ? '100vw' : 'fit-content'};
     cursor: pointer;
     border-radius: 8px;
     transition: all 0.5s;
@@ -24,11 +25,11 @@ const Style = styled.div<{ $type?: number }>`
     }
 `;
 const Button = (props: ButtonProps) => {
-    const { size, text, icon, type, onClick } = props;
+    const { size, text, icon, type,expand, onClick } = props;
     switch (size) {
         case 'l':
             return (
-                <Style $type={type} onClick={onClick}>
+                <Style $type={type} onClick={onClick} $expand={expand}>
                     <ButtonL>
                         {icon && <img src={icon} alt={''} />}
                         {text}
@@ -37,7 +38,7 @@ const Button = (props: ButtonProps) => {
             );
         case 'm':
             return (
-                <Style $type={type} onClick={onClick}>
+                <Style $type={type} onClick={onClick} $expand={expand}>
                     <ButtonM>
                         {icon && <img src={icon} alt={''} />}
                         {text}
