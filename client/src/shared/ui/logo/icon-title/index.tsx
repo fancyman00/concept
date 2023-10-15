@@ -14,7 +14,7 @@ export const IconTitleLogo =  (props: IconTitleLogo) => {
     const {icon, title} = props
     return (
         <>
-            <img src={icon} alt={''} />
+            {icon && <img src={icon} alt={''} />}
             <TitleStyle>{title}</TitleStyle>
         </>
     );    

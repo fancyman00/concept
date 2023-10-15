@@ -4,14 +4,17 @@ import Button from "../../../shared/ui/button";
 import messageIcon from "../../../shared/assets/icons/message.svg";
 import {Actions, Banner, CompanyTitle, MobileHomeTypography} from "../style";
 import {useNavigate} from "react-router-dom";
+import { ReactNode } from "react";
+import { ConditionalRender } from "../../../shared/ui/conditional-render";
 type HomeBannerProps = {
-    isMobile: boolean
+    isMobile: boolean,
+    children?: ReactNode
 }
 export const HomeBanner = (props: HomeBannerProps) => {
     const {isMobile} = props
     const navigate = useNavigate()
     return(
-        <Layout type={'page'}>
+        <ConditionalRender condition={isMobile} Second={<Layout type={"page"}/>}>
             <Banner $isMobile={isMobile}>
                 <CompanyTitle>
                     <Typography size={'xl'} text={'ООО КОНЦЕПТ'} color={'#00AAFF'} />
@@ -27,6 +30,6 @@ export const HomeBanner = (props: HomeBannerProps) => {
                     <Button expand={isMobile} onClick={()=>navigate('/contact-us')} type={1} icon={messageIcon} size={'l'} text={'Оставить заявку'}/>
                 </Actions>
             </Banner>
-        </Layout>
+        </ConditionalRender>
     )
 }

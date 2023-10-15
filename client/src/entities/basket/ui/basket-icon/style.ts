@@ -18,7 +18,7 @@ export const Title = styled.div`
   align-items: center;
   justify-content: center;
   gap: 4px;
-  font-weight: 500;
+  font-weight: 600;
   color: rgba(0, 0, 0, 0.56);
 `
 export const Counter = styled.div`

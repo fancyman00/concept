@@ -3,7 +3,7 @@ import {PageLayout} from "./page-layout";
 
 type LayoutProps = {
     type: 'page',
-    children: ReactNode
+    children?: ReactNode
 }
 const Layout = (props: LayoutProps) => {
     const {type, children} = props

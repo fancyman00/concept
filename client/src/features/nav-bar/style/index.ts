@@ -1,17 +1,16 @@
 import styled from "styled-components";
 import {NavLink} from "react-router-dom";
-export const ItemStyle = styled(NavLink)`
+export const ItemStyle = styled(NavLink)<{$isMobile: boolean}>`
   height: 100%;
   display: flex;
   align-items: center;
-
   font-weight: 600;
   font-size: 20px;  
   line-height: 28px;
   color: rgba(0, 0, 0, 0.56);
   text-decoration: none;
 
-  margin-right: 48px;
+  margin-right: ${(props)=> !props.$isMobile && '48px'};
   transition: all 0.2s;
   img{
     width: 24px;
@@ -27,11 +26,26 @@ export const ItemStyle = styled(NavLink)`
     color: #00AAFF;
   }
 `
-export const Style = styled.nav`
+export const StyleDesktop = styled.nav`
   display: flex;
   align-items: center;
   position: relative;
   height: 96px;
+`
+export const StyleMobile = styled.nav`
+  display: flex;
+  align-items: center;
+  position: absolute; 
+  flex-direction: column;
+  background: white;
+  gap: 8px;
+  padding: 20px;
+`
+export const TopBar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
 `
 export const LogoStyle = styled(NavLink)`
   height: 100%;
@@ -41,7 +55,7 @@ export const LogoStyle = styled(NavLink)`
   color: black;
   text-decoration: none;
 `
-export const IconItemStyle = styled.a`
+export const IconItemStyle = styled(NavLink)`
   display: flex;
   align-items: center;
   justify-content: center;
