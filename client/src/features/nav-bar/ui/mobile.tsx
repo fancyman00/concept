@@ -1,4 +1,4 @@
-import { ItemStyle, LogoStyle, IconItemStyle, StyleMobile, TopBar } from "../style";
+import {ItemStyle, IconItemStyle, StyleMobile, TopBar, LogoStyleMobile} from "../style";
 import { IconTitleLogo } from '../../../shared/ui/logo/icon-title';
 import { BasketIcon } from '../../../entities/basket/ui/basket-icon';
 import Icon from '../../../shared/assets/icons/shopping-cart-blue.svg';
@@ -14,9 +14,9 @@ export const NavBarMobile = (props: NavBarProps) => {
     return (
         <StyleMobile>
             <TopBar>
-                <LogoStyle to={'/'}>
+                <LogoStyleMobile to={'/'}>
                     <IconTitleLogo title={'CONCEPT'} icon={''} />
-                </LogoStyle>
+                </LogoStyleMobile>
                 {!isOpen && <ActionIcon icon={MenuIcon} size={28} onClick={() => setIsOpen(true)} />}
                 {isOpen && <ActionIcon icon={CloseIcon} size={28} onClick={() => setIsOpen(false)} />}
             </TopBar>
