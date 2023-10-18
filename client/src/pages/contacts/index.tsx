@@ -1,5 +1,5 @@
 import WriteUs from '../../features/write-us';
-import { ContactsInfo, ContactsInfoItem } from '../../features/contacts-info/ui';
+import { ContactsInfoItem } from '../../features/contacts-info/ui';
 import MailIcon from '../../shared/assets/icons/mail.svg';
 import TelephoneIcon from '../../shared/assets/icons/telephone.svg';
 import LocationIcon from '../../shared/assets/icons/location.svg';
@@ -7,6 +7,7 @@ import Typography from '../../shared/ui/typography';
 import { Banner } from '../../shared/ui/banner';
 import { Style } from './style.ts';
 import {sendMessage} from "./api.ts";
+import ContactsInfo from "../../features/contacts-info";
 const MockItems: ContactsInfoItem[] = [
     {
         icon: MailIcon,
@@ -36,4 +37,3 @@ export const Contacts = () => {
         </Style>
     );
 };
-// TODO: Need refactor FSD error

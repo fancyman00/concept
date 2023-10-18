@@ -8,6 +8,7 @@ import { useActions } from '../../../shared/model';
 import { basketSlice } from '../../../entities/basket/model/slice.ts';
 import { OrderForm } from "../../../features/order-form/ui";
 import { sendOrder } from "../api";
+import {myCartChooseProduct, myCartSmallText} from "../../../shared/const/typography.ts";
 
 
 export const Order = () => {
@@ -39,16 +40,14 @@ export const Order = () => {
                         )}
                     />
                 <OrderForm onSubmit={submitHandle}/>
-                  <Typography size={'s'} text={'О товаре и продавце\n' +
-                    'Нажимая «Оплатить картой», вы соглашаетесь с условиями использования сервиса Яндекс Маркет. С подробными условиями доставки можно ознакомиться на странице о доставке.\n' +
-                    'Товары с доставкой партнёра Яндекс Еды купят по вашему поручению в обычном магазине (раздел 5 условий).'}/>
+                  <Typography size={'s'} text={myCartSmallText}/>
                 </Content>
             ) : (
                 <Content>
                     <ErrorBoundary>
                         <Typography
                             size={'l'}
-                            text={'Выберите оборудование и добавьте его в корзину, чтобы оформить предзаказ'}
+                            text={myCartChooseProduct}
                         />
                         <Ref to={'/products'}>
                             <Typography size={'m'} text={'Оборудование'} color={'#00aaff'} />
