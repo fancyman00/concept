@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {isMobile} from "react-device-detect";
 export const Item = styled.div`
   display: flex;
   flex-direction: column;
@@ -13,5 +14,6 @@ export const Item = styled.div`
 `
 export const Style = styled.div`
   display: flex;
+  flex-direction: ${isMobile ? 'column' : 'row'};
   gap: 64px;
 `

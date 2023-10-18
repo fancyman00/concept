@@ -13,9 +13,9 @@ export const Header = (props: HeaderProps) => {
     const {links} = props
     return (
       <ConditionalRender condition={isMobile} First={<MobileStyle/>} Second={<DesktopStyle/>}>
-        <ConditionalRender condition={isMobile} Second={<Layout type={'page'}/>}>
-          <NavBar isMobile={isMobile} textItems={links} />
-        </ConditionalRender>
+        <Layout type={isMobile ? 'mobile' : 'page'}>
+          <NavBar textItems={links}/>
+        </Layout>
       </ConditionalRender>
     );
 };

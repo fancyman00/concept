@@ -6,6 +6,6 @@ type BannerProps = {
     padding?: number
 };
 export const Banner = (props: BannerProps) => {
-    const { color, padding, children } = props;
+    const {  color, padding, children } = props;
     return <Style $background={color} $padding={padding}>{children}</Style>;
 };

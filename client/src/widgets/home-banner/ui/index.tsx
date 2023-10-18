@@ -2,24 +2,20 @@ import Layout from "../../../shared/ui/layout";
 import Typography from "../../../shared/ui/typography";
 import Button from "../../../shared/ui/button";
 import messageIcon from "../../../shared/assets/icons/message.svg";
-import {Actions, Banner, CompanyTitle, MobileHomeTypography} from "../style";
+import {Actions, Banner, CompanyTitle} from "../style";
 import {useNavigate} from "react-router-dom";
-import { ReactNode } from "react";
 import { ConditionalRender } from "../../../shared/ui/conditional-render";
-type HomeBannerProps = {
-    isMobile: boolean,
-    children?: ReactNode
-}
-export const HomeBanner = (props: HomeBannerProps) => {
-    const {isMobile} = props
+import {isMobile} from "react-device-detect";
+
+export const HomeBanner = () => {
     const navigate = useNavigate()
     return(
         <ConditionalRender condition={isMobile} Second={<Layout type={"page"}/>}>
-            <Banner $isMobile={isMobile}>
+            <Banner>
                 <CompanyTitle>
                     <Typography size={'xl'} text={'ООО КОНЦЕПТ'} color={'#00AAFF'} />
                 </CompanyTitle>
-                {isMobile ? <MobileHomeTypography>ОБОРУДОВАНИЕ И РЕШЕНИЯ<br/>DWDM И OTN</MobileHomeTypography> : <Typography size={'xl'} text={'ОБОРУДОВАНИЕ И РЕШЕНИЯ\nDWDM И OTN'} color={'white'} />}
+                <Typography size={'xl'} text={'ОБОРУДОВАНИЕ И РЕШЕНИЯ\nDWDM И OTN'} color={'white'} />
                 <Typography
                     size={'l'}
                     weight={500}

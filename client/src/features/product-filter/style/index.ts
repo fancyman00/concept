@@ -4,4 +4,5 @@ export const Style = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    overflow-x: auto;
 `;

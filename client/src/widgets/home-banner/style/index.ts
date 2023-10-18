@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import {isMobile} from "react-device-detect";
 
-export const Banner = styled.div<{$isMobile: boolean}>`
+export const Banner = styled.div`
   box-sizing: border-box;
-  padding: ${(props)=> props.$isMobile ? '20px 20px' : '120px 20px'};
+  padding: ${isMobile ? '20px 20px' : '120px 20px'};
   width: 1000px;
   max-width: 100vw;
   display: flex;
@@ -23,10 +24,4 @@ export const Actions = styled.div`
   @media (max-width: 400px) {
     margin-top: 32px;
   }
-`
-export const MobileHomeTypography = styled.div`
-  font-size: 40px;
-  line-height: 48px;
-  color: white;
-  font-weight: 700;
 `

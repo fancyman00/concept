@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {NavLink} from "react-router-dom";
-export const ItemStyle = styled(NavLink)<{$isMobile: boolean}>`
+import {isMobile} from "react-device-detect";
+export const ItemStyle = styled(NavLink)`
   height: 100%;
   display: flex;
   align-items: center;
@@ -10,7 +11,7 @@ export const ItemStyle = styled(NavLink)<{$isMobile: boolean}>`
   color: rgba(0, 0, 0, 0.56);
   text-decoration: none;
 
-  margin-right: ${(props)=> !props.$isMobile && '48px'};
+  margin-right: ${!isMobile && '48px'};
   transition: all 0.2s;
   img{
     width: 24px;

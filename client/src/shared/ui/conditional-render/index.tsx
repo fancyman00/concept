@@ -4,16 +4,16 @@ type ConditionalRenderProps = {
   children?: ReactNode,
   First?: ReactElement,
   Second?: ReactElement,
+  commonProps?: object
 }
 export const ConditionalRender = (props: ConditionalRenderProps) => {
-  const {condition, children, First, Second} = props
-  console.log(Second?.props)
+  const {condition, children, First, Second, commonProps} = props
   if(condition) {
-    if(First) return cloneElement(First, {  }, children);
+    if(First) return cloneElement(First, commonProps ?? {}, children);
     else return <>{children}</>
   }
   else {
-    if (Second) return cloneElement(Second, {  }, children);
+    if (Second) return cloneElement(Second, commonProps ?? {}, children);
     else return <>{children}</>
   }
 }

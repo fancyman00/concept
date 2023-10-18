@@ -12,7 +12,7 @@ export const NavBarDesktop = (props: NavBarProps) => {
         <IconTitleLogo title={'CONCEPT'} icon={''} />
       </LogoStyle>
       {textItems && textItems.map((item) => (
-        <ItemStyle $isMobile={false} key={item.id} to={item.to}>{item.label}</ItemStyle>
+        <ItemStyle key={item.id} to={item.to}>{item.label}</ItemStyle>
       ))}
       {iconItems && iconItems.map((item) => (
         <IconItemStyle to={item.to} key={item.id}><img src={item.icon} alt={''}/>{item.label}</IconItemStyle>

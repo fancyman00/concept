@@ -23,7 +23,7 @@ export const NavBarMobile = (props: NavBarProps) => {
             {isOpen &&
                 textItems &&
                 textItems.map((item) => (
-                    <ItemStyle $isMobile={true} key={item.id} to={item.to}>
+                    <ItemStyle key={item.id} to={item.to}>
                         {item.label}
                     </ItemStyle>
                 ))}

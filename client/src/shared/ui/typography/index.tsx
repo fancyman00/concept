@@ -1,8 +1,10 @@
 import { TypographyL } from "./large"
-import { TypographyXL } from "./xlarge";
+import {TypographyMobileXL, TypographyXL} from "./xlarge";
 import { TypographyM } from "./medium";
 import { TypographyS } from "./small";
 import {TypographyXXL} from "./xxlarge";
+import {ConditionalRender} from "../conditional-render";
+import {isMobile} from "react-device-detect";
 
 type TypographyProps = {
     size: 'xxl' | 'xl' | 'l' | 'm' | 's'
@@ -15,29 +17,29 @@ const Typography = (props: TypographyProps) => {
     const {size, text, color, weight} = props
     switch (size) {
         case "xxl": return(
-            <TypographyXXL $color={color} $weight={weight}>
+            <ConditionalRender condition={isMobile ?? false} First={<TypographyXXL/>} Second={<TypographyXXL/>} commonProps={{$color: color, $weight: weight}}>
                 {text}
-            </TypographyXXL>
+            </ConditionalRender>
         )
         case "xl": return(
-            <TypographyXL $color={color} $weight={weight}>
+            <ConditionalRender condition={isMobile ?? false} First={<TypographyMobileXL/>} Second={<TypographyXL/>} commonProps={{$color: color, $weight: weight}}>
                 {text}
-            </TypographyXL>
+            </ConditionalRender>
         )
         case "l": return(
-            <TypographyL $color={color} $weight={weight}>
+            <ConditionalRender condition={isMobile ?? false} First={<TypographyL/>} Second={<TypographyL/>} commonProps={{$color: color, $weight: weight}}>
                 {text}
-            </TypographyL>
+            </ConditionalRender>
         )
         case "m": return(
-            <TypographyM $color={color} $weight={weight}>
+            <ConditionalRender condition={isMobile ?? false} First={<TypographyM/>} Second={<TypographyM/>} commonProps={{$color: color, $weight: weight}}>
                 {text}
-            </TypographyM>
+            </ConditionalRender>
         )
         case "s": return(
-            <TypographyS $color={color} $weight={weight}>
+            <ConditionalRender condition={isMobile ?? false} First={<TypographyS/>} Second={<TypographyS/>} commonProps={{$color: color, $weight: weight}}>
                 {text}
-            </TypographyS>
+            </ConditionalRender>
         )
     }
 }

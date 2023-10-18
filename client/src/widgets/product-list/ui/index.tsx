@@ -7,7 +7,7 @@ import { useState } from 'react';
 import Layout from '../../../shared/ui/layout';
 import { ProductFilterItem } from '../../../entities/product/ui/filter-item';
 import {useProductListData} from "../model/hooks/useProductListData.tsx";
-
+import {isMobile} from "react-device-detect";
 
 export const ProductList = () => {
     const [filter, setFilter] = useState({Name: undefined, Description: 'Все'});
@@ -30,7 +30,7 @@ export const ProductList = () => {
                     )}
                 />
             </Banner>
-            <Layout type={'page'}>
+            <Layout type={isMobile ? 'mobile' : 'page'}>
                 <CardList items={productItems} renderItem={(item) => <ProductCard item={item} />} />
             </Layout>
         </>
